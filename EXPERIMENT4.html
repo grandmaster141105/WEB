@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+<h1 align="center">Hotel Room Booking Form</h1>
+<hr>
+
+<!-- Hotel Booking Form -->
+<form method="post" action="submit.html">
+
+    <!-- Full Name -->
+    <p>
+        <label>Full Name: </label>
+        <input type="text" name="fullname" placeholder="Enter your full name" required>
+    </p>
+
+    <!-- Email -->
+    <p>
+        <label>Email: </label>
+        <input type="email" name="email" placeholder="Enter your email" required>
+    </p>
+
+    <!-- Phone -->
+    <p>
+        <label>Phone: </label>
+        <input type="tel" name="phone" placeholder="Enter your phone number" required>
+    </p>
+
+    <!-- Check-in Date -->
+    <p>
+        <label>Check-in Date: </label>
+        <input type="date" name="checkin" required>
+    </p>
+
+    <!-- Check-out Date -->
+    <p>
+        <label>Check-out Date: </label>
+        <input type="date" name="checkout" required>
+    </p>
+
+    <!-- Room Type (Dropdown) -->
+    <p>
+        <label>Room Type: </label>
+        <select name="roomtype" required>
+            <option value="">-- Select Room Type --</option>
+            <option value="single">Single Room</option>
+            <option value="double">Double Room</option>
+            <option value="suite">Suite</option>
+        </select>
+    </p>
+
+    <!-- Number of Guests -->
+    <p>
+        <label>Number of Guests: </label>
+        <input type="number" name="guests" min="1" placeholder="Enter number of guests" required>
+    </p>
+
+    <!-- Special Requests (Textarea) -->
+    <p>
+        <label>Special Requests: </label><br>
+        <textarea name="requests" rows="4" cols="40" placeholder="Enter any special requests"></textarea>
+    </p>
+
+    <!-- Submit and Reset -->
+    <p>
+        <input type="submit" value="Book Now">
+        <input type="reset" value="Reset Form">
+    </p>
+
+</form>
+
+<hr>
+<h1>SUBMITTED BY : SHREYA SINGH</h1>
+<h2>2025b15410190</h2>
+
+
+
+</body>
+</html>
+
+</body>
+</html>
