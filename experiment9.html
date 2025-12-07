@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsive Product Grid</title>
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: Arial, sans-serif;
+        }
+
+        .container {
+            width: 90%;
+            margin: 2em auto;
+            text-align: center;
+        }
+
+        h2 {
+            margin-bottom: 1.5em;
+            font-size: 1.8em;
+        }
+
+        .product-grid {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 1.5em;
+        }
+
+        .card {
+            width: 22%;
+            background: #fff;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+            padding: 1em;
+            border-radius: 10px;
+        }
+
+        .card img {
+            width: 40px;
+            margin-bottom: 0.8em;
+        }
+
+        .title {
+            font-weight: bold;
+            margin-bottom: 0.5em;
+        }
+
+        .desc {
+            font-size: 0.9em;
+            color: #555;
+            margin-bottom: 0.5em;
+        }
+
+        .price {
+            font-weight: bold;
+            color: #444;
+        }
+
+        @media (max-width: 1024px) {
+            .card {
+                width: 45%;
+            }
+        }
+
+        @media (max-width: 600px) {
+            .card {
+                width: 90%;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="container">
+        <h2>Responsive Product Grid</h2>
+
+        <div class="product-grid">
+            <div class="card">
+                <img src="download.jpg">
+                <div class="title">Product 1</div>
+                <div class="desc">High-quality item with great features.</div>
+                <div class="price">₹499</div>
+            </div>
+
+            <div class="card">
+                <img src="download.jpg">
+                <div class="title">Product 2</div>
+                <div class="desc">Durable and stylish for daily use.</div>
+                <div class="price">₹799</div>
+            </div>
+
+            <div class="card">
+                <img src="download.jpg">
+                <div class="title">Product 3</div>
+                <div class="desc">Lightweight and comfortable.</div>
+                <div class="price">₹1299</div>
+            </div>
+
+            <div class="card">
+                <img src="download.jpg">
+                <div class="title">Product 4</div>
+                <div class="desc">Trendy design with premium quality.</div>
+                <div class="price">₹999</div>
+            </div>
+        </div>
+    </div>
+
+</body>
+</html>
