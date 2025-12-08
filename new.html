@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Room Booking Form</title>
+
+    <style>
+        * {
+ margin: 0;
+ padding: 0;
+ box-sizing: border-box;
+ font-family: Arial, sans-serif;
+        }
+
+        body {
+ background: white;
+ display: flex;
+ justify-content: center;
+ align-items: center;
+ min-height: 100vh;
+        }
+fieldset {
+width: 450px;
+background: #fff;
+padding: 20px;
+border-radius: 10px;
+border: 2px solid black;
+box-shadow: 0 0 10px rgba(0,0,0,0.1);
+        }
+
+legend {
+font-size: 22px;
+font-weight: bold;
+padding: 0 10px;
+        }
+label {
+font-weight: bold;
+margin-top: 12px;
+display: block;
+        }
+
+input, select, textarea {
+width: 100%;
+padding: 10px;
+margin-top: 5px;
+margin-bottom: 12px;
+border: 1px solid black;
+ border-radius: 6px;
+font-size: 15px;
+        }
+ textarea {
+ resize: none;
+ height: 90px;
+        }
+ button {
+  width: 100%;
+  padding: 12px;
+ background: white;
+ color: white;
+ border: none;
+ border-radius: 6px;
+ font-size: 16px;
+  cursor: pointer;
+        }
+
+ button:hover {
+ background: white;
+        }
+    </style>
+</head>
+
+<body>
+ <form>
+ <fieldset>
+            <legend>Room Booking Form</legend>
+ <label for="name">Full Name:</label>
+ <input type="text" id="name" placeholder="Enter your full name">
+ <label for="email">Email ID:</label>
+ <input type="email" id="email" placeholder="Enter your email">
+ <label for="room">Room Type:</label>
+ <select id="room">
+<option>Single Room</option>
+<option>Double Room</option>
+<option>Deluxe Room</option>
+ <option>Suite</option>
+</select>
+
+<label for="days">Number of Days:</label>
+ <select id="days">
+<option>1 Day</option>
+<option>2 Days</option>
+ <option>3 Days</option>
+ <option>More than 3 Days</option>
+ </select>
+ <label for="requests">Special Requests:</label>
+ <textarea id="requests" placeholder="Any special instructions..."></textarea>
+
+ <button type="submit">Book Now</button>
+</fieldset> </form>
+
+</body>
+</html>
