@@ -1,0 +1,22 @@
+body {
+font-family: Arial;
+background: linear-gradient(to right, pink, peachpuff);
+display: flex;
+justify-content: center;
+align-items: center;
+height: 100vh;
+}
+
+.box {
+background: white;
+padding: 30px;
+border-radius: 10px;
+text-align: center;
+box-shadow: 0 5px 15px gray;
+}
+input {
+    padding: 10px;
+    width: 200px;
+    margin: 10px;
+}
+
